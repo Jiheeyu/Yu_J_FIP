@@ -1,6 +1,6 @@
 ![YUJIHEE]()
 
-# Jihee Yu's Final Project
+# :sparkles:Jihee Yu's Final Project:sparkles:
 > Third Semester
 
 ## This is about Final Intergrated Project.
@@ -13,7 +13,7 @@
 
 ### Getting Started
 
-*_Click [here](https://docs.google.com/document/d/1vnUhqMDEk7ZXBvKcLAbdtOQKnog-mhB0xGYtVeJwvDg/edit?usp=sharing)_*  
+:point_right:*_Click [here](https://docs.google.com/document/d/1vnUhqMDEk7ZXBvKcLAbdtOQKnog-mhB0xGYtVeJwvDg/edit?usp=sharing)_*  
 If you would like to see my developer roadmap.
 
 ### Prerequisites
