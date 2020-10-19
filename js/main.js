@@ -9,4 +9,20 @@
         mNav.classList.toggle("change");
     });
 
+
+
+    fetch('./data/projectDataSet.json')
+    .then(res => res.json()) 
+    .then(data => {
+
+    })
+
+    .catch((err) => {
+        //debugger;
+        console.log(err);
+        
+        const profText = document.querySelector('.profPanelText');
+        profText.textContent = `ERROR : something went wrong`
+    })
+
 })()
