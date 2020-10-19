@@ -9,10 +9,31 @@ html {
 }
 
 body {
-    font: $main-font;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-// .hidden {
-//     display: none;
-// }
+.hidden {
+    display: none;
+}
+ 
+footer {
+    background-color: darkorchid;
+    height:80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    align-items: center;
+}
 
+.copyright {
+    background-color: darkred;
+    height: 60px;
+    width: 150px;
+    
+}
+
+.sns {
+    background-color: darksalmon;
+    height: 60px;
+    width: 150px;
+}
