@@ -12,10 +12,38 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+main {
+    background: url(../images/background.png) no-repeat center;
+    width: 100%;
+    
+}
+
 .hidden {
     display: none;
 }
- 
+
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto;
+}
+
+.box1 {
+    border: solid 1px yellow;
+    height: 100vh;
+}
+
+.box2 {
+    border: solid 1px green;
+    height: 100vh;
+}
+
+.box3 {
+    border: solid 1px blue;
+    height: 100vh;
+}
+
 footer {
     background-color: darkorchid;
     height:80px;
