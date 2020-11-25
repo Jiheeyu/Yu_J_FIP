@@ -14,8 +14,7 @@
     fetch('./data/projectDataSet.json')
     .then(res => res.json()) 
     .then(data => {
-
-        debugger;
+        
         console.log(data);
 
         for (let proj in data) {

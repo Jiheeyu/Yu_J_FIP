@@ -1,22 +1,73 @@
-.container-wrapper {
+#main-content {
+
     display: flex;
+    align-items: center;
+}
+
+.Text {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    max-width: 100%;
-    margin: auto;
+    width: 1000px;
+    height: 500px;
+    // background-color: chartreuse;
+    position: relative;
+    z-index: +1;
+    color:$main-text-color;
 }
 
-.box1 {
-    background-color: yellow;
-    height: 100vh;
+.subText {
+    display: flex;
+    align-items: center;
+    font-family: "NotoSans-LightItalic", serif;
+    font-size:25px;
+    width: 100%;
+    // background-color: darkcyan;
+    margin-bottom: 50px;
 }
 
-.box2 {
-    background-color: green;
-    height: 100vh;
+.subLine {
+    margin-right: 20px;
+    display: block;
+    height: 1px;
+    width: 455px;
+    background-color: $main-text-color;
 }
 
-.box3 {
-    background-color: blue;
-    height: 100vh;
+
+.mainText {
+
+    width: 700px;
+    text-align: left;
+    // background-color: #a9a9a9;
+    align-self: flex-end;
+
+    
+
+    .drawing {
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $main-text-color;
+        font-size: 80px;
+        margin-left: 50px;
+
+    }
+
+    h3 {
+        font-family: $main-font;
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 120px;
+    }
+
+}
+
+.mainIllust {
+    width: 640px;
+    height: 640px;
+    background-color: darkcyan;
+    position:absolute;
+    right: 80px;
+    
 }
 

@@ -1,3 +1,13 @@
+$noto-font-path: "../fonts";
+
+@font-face {
+    // This is parsed as a normal function call that takes a quoted string.
+    src: url("#{$noto-font-path}/NotoSans-LightItalic.ttf") format("ttf");
+
+    font-family: "NotoSans-LightItalic", serif;
+    font-weight: 300;
+}
+
 
 $main-text-color: #2d221f;
 $sub-text-color: #666666;
@@ -5,6 +15,8 @@ $sub-text-color: #666666;
 $blue-bg-color: #9cf1f0;
 $yellow-bg-color: #fef281;
 $green-bg-color: #99f0bb;
+$pink:#ffece7;
 
 $main-font: 'Libre Baskerville', serif;
-$sub-font: 'Noto Sans', sans-serif;
+$sub-font: 'NotoSans', sans-serif;
+
