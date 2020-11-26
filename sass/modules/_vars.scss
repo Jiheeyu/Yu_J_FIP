@@ -5,7 +5,20 @@ $noto-font-path: "../fonts";
     src: url("#{$noto-font-path}/NotoSans-LightItalic.ttf") format("ttf");
 
     font-family: "NotoSans-LightItalic", serif;
-    font-weight: 300;
+}
+
+@font-face {
+    // This is parsed as a normal function call that takes a quoted string.
+    src: url("#{$noto-font-path}/NotoSans-Regular.ttf") format("ttf");
+
+    font-family: "NotoSans-Regular", serif;
+}
+
+@font-face {
+    // This is parsed as a normal function call that takes a quoted string.
+    src: url("#{$noto-font-path}/NotoSans-Medium.ttf") format("ttf");
+
+    font-family: "NotoSans-Medium", serif;
 }
 
 
@@ -18,5 +31,5 @@ $green-bg-color: #99f0bb;
 $pink:#ffece7;
 
 $main-font: 'Libre Baskerville', serif;
-$sub-font: 'NotoSans', sans-serif;
+
 

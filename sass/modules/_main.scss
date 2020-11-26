@@ -9,13 +9,8 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-main {
-    background: url(../images/background.png) no-repeat center;
-    width: 100%;
-    
+    font-family: "NotoSans-Regular", serif;
+    color: $main-text-color;
 }
 
 .hidden {
@@ -27,20 +22,11 @@ main {
     flex-direction: column;
     max-width: 100%;
     margin: auto;
+    
 }
 
-.box1 {
+.box {
     border: solid 1px yellow;
-    height: 100vh;
-}
-
-.box2 {
-    border: solid 1px green;
-    height: 100vh;
-}
-
-.box3 {
-    border: solid 1px blue;
     height: 100vh;
 }
 
