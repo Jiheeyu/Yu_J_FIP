@@ -2,21 +2,21 @@ $noto-font-path: "../fonts";
 
 @font-face {
     // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$noto-font-path}/NotoSans-LightItalic.ttf") format("ttf");
+    src: url("#{$noto-font-path}/NotoSans-LightItalic.ttf") format("truetype");
 
     font-family: "NotoSans-LightItalic", serif;
 }
 
 @font-face {
     // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$noto-font-path}/NotoSans-Regular.ttf") format("ttf");
+    src: url("#{$noto-font-path}/NotoSans-Regular.ttf") format("truetype");
 
     font-family: "NotoSans-Regular", serif;
 }
 
 @font-face {
     // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$noto-font-path}/NotoSans-Medium.ttf") format("ttf");
+    src: url("#{$noto-font-path}/NotoSans-Medium.ttf") format("truetype");
 
     font-family: "NotoSans-Medium", serif;
 }

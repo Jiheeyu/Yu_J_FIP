@@ -20,34 +20,46 @@ body {
 .container-wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    margin: auto;
+    width: 100%;
+    margin: auto 0;
     
 }
 
 .box {
     border: solid 1px yellow;
-    height: 100vh;
+    height: 1080px;
 }
 
 footer {
-    background-color: darkorchid;
+    background-color: white;
+    box-shadow: 1px 0px 4px rgba(56, 55, 55, 0.1);
     height:80px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 0fr;
     align-items: center;
-}
+    z-index: 2;
 
-.copyright {
-    background-color: darkred;
-    height: 60px;
-    width: 150px;
-    
+    h3 {
+        font-size: 10px;
+        letter-spacing: 2px;
+        color: $sub-text-color;
+        margin: 0 50px;
+    }
 }
 
 .sns {
-    background-color: darksalmon;
-    height: 60px;
-    width: 150px;
+    display: flex;
+    // background-color: darksalmon;
+    
+
+    h3 {
+        align-self: center;
+        margin-left: 10px;
+    }
+}
+
+.sns-icon {
+    width: 20px;
+    height: 20px;
 }

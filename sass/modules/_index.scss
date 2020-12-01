@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 1000px;
+    width: 1100px;
     height: 500px;
     // background-color: chartreuse;
     position: relative;
@@ -63,7 +63,7 @@
         font-family: $main-font;
         font-size: 100px;
         font-weight: 700;
-        line-height: 120px;
+        line-height: 100px;
         letter-spacing: 3px;
     }
 
@@ -72,16 +72,63 @@
 .mainIllust {
     width: 640px;
     height: 640px;
-    background-color: darkcyan;
     position:absolute;
-    right: 80px;
-    
+    right: 200px;
+    top: 290px;
 }
 
-#aboutMe-content {
-    display: flex;
-    flex-direction: column;
+#flower {
+    width: 400px;
+    height: 600px;
 }
+
+.Animate-Draw {
+    fill-opacity: 0;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration: 1;
+    
+    animation-name: DrawLine, FadeStroke, FillIn;
+    animation-duration: 4s, 1s, 1s;
+    animation-delay: 0s, 3.5s, 3.5s;
+  }
+
+  @keyframes DrawLine {
+    to { stroke-dashOffset: 0; }
+  }
+  
+  @keyframes FadeStroke {
+    to { stroke-opacity: 0; }
+  }
+  
+  @keyframes FillIn {
+    from { fill-opacity: 0; }
+    to { fill-opacity: 1; }
+  }
+
+// @keyframes flower {
+//     from {
+//         stroke-dashoffset: 1000;
+//         }
+//         to {
+//         stroke-dashoffset: 0;
+//         }
+// }
+#flower-path1 {
+    stroke-dashArray: 500;
+    stroke-dashoffset: 500;
+}
+
+#flower-path2 {
+    stroke-dashArray: 300;
+    stroke-dashoffset: 300; 
+}
+
+#flower-path3 {
+    stroke-dashArray: 500;
+    stroke-dashoffset: 500; 
+}
+
 
 h2 {
     font-family: "NotoSans-LightItalic", serif;
@@ -91,29 +138,68 @@ h2 {
     margin-top: 20px;
 }
 
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 130px;
+}
+
 .portfolio-title {
     background:url(../images/portfolio.png) no-repeat center;
+}
+
+.portfolio-imgs {
+    display: inline-block;
+    // background-color: lightcoral;
+    flex-basis: 55%;
+    position: relative;
+    height: 650px;
+}
+
+.beer {
+    margin-top: 95px;
+}
+
+.jar {
+    position: absolute;
+    bottom: 0;
+}
+
+.sportsnet {
+    position: absolute;
+}
+
+#aboutMe-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .aboutMe-title {
     background:url(../images/about-me.png) no-repeat center;
 }
 
-.aboutMe-container {
-    // background-color: lightblue;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 50px;
-    align-items: center;
+#portfolio-content .graphic {
+    width: 400px;
 }
 
-.designer {
-    grid-column: 1/2;
-    justify-self: end;
+.graphic {
+
+    h3 {
+        text-align: left;
+    }
+
+    .adj {
+        text-align: right;
+    }
+}
+
+.button-section {
+    // background-color: yellowgreen;
     text-align: center;
-    position: relative;
+    align-self: center;
+    width: 500px;
+    
 
     h3 {
         font-family: $main-font;
@@ -136,32 +222,29 @@ h2 {
         letter-spacing: 3px;
    
     }
-    .deco-line {
-        position: absolute;
-        left: 350px;
-        bottom: 180px;
-    }
+   
 }
 
-
-
-
 .my-selfie {
-    grid-column: 2/3;
-    justify-self: center;
-    
-    
+    margin: 0 50px;
+    position: relative;
+}
+
+.deco-line {
+    position: absolute;
+    left: -80px;
+    bottom: 300px
 }
 
 .my-info{
-    grid-column: 3/4;
-    justify-self: start;
+    width: 500px;
+    align-self: center;
 
     h4 {
         font-family: "NotoSans-Medium", serif;
         font-size: 18px;
-        
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        margin-top: 50px;
     }
     
     h5 {
@@ -169,13 +252,24 @@ h2 {
         color: $sub-text-color;
         font-size: 20px;
         line-height: 25px;
+        height: 50%;
     }
     p {
         color: $sub-text-color;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 25px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         margin-left: 30px;
+    }
+
+    .college-info {
+        font-family: "NotoSans-LightItalic", serif;  
+        font-size: 16px;   
+        letter-spacing: 1px;
+    }
+
+    .college {
+        margin-bottom: 0;
     }
 
 }
@@ -196,7 +290,7 @@ h2 {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9cf1f0",endColorstr="#fef281",GradientType=1);
     border: none;
     border-radius: 30px;
-    box-shadow: 1px 1px 4px rgba(56, 55, 55, 0.2);
+    box-shadow: 1px 1px 4px rgba(56, 55, 55, 0.1);
     color: white;
     padding: 15px 30px;
     margin-top:30px;
@@ -207,22 +301,10 @@ h2 {
     cursor: pointer;
 }
 
-
-
-// .Education {
-//     display: flex;
-//     flex-direction: column;
-//   }
-
-
-// .skill {
-//     display: flex;
-//     flex-direction: column;
-// }
-
 .skill-text-container {
     display: flex;
 
 }
+
 
 
