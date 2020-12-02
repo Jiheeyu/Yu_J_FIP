@@ -1,5 +1,16 @@
+
 @media screen and (max-width: 768px) {
-    .mNav {
-        width: 100%;
-    }
+  .nav-list {
+      position: absolute;
+      right: 0;
+      background: $pink;
+      height: 92vh;
+      z-index: 0;
+  }
 }
+
+@media screen and (max-width: 1300px) {
+    .nav-list {
+        width: 50%;
+    }
+  }
