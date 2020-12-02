@@ -1,26 +1,3 @@
-$noto-font-path: "../fonts";
-
-@font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$noto-font-path}/NotoSans-LightItalic.ttf") format("truetype");
-
-    font-family: "NotoSans-LightItalic", serif;
-}
-
-@font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$noto-font-path}/NotoSans-Regular.ttf") format("truetype");
-
-    font-family: "NotoSans-Regular", serif;
-}
-
-@font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$noto-font-path}/NotoSans-Medium.ttf") format("truetype");
-
-    font-family: "NotoSans-Medium", serif;
-}
-
 
 $main-text-color: #2d221f;
 $sub-text-color: #666666;
@@ -31,5 +8,6 @@ $green-bg-color: #99f0bb;
 $pink:#ffece7;
 
 $main-font: 'Libre Baskerville', serif;
+$sub-font: 'Roboto', sans-serif;
 
 

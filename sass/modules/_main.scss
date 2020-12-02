@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: "NotoSans-Regular", serif;
+    font-family: $sub-font;
     color: $main-text-color;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .box {
     border: solid 1px yellow;
-    height: 1080px;
+    height: 100vh;
 }
 
 footer {
