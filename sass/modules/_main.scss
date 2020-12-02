@@ -13,6 +13,13 @@ body {
     color: $main-text-color;
 }
 
+img, embed, object, video {
+    max-width: 100%; }
+
+img {
+    -ms-interpolation-mode: bicubic;
+    }    
+
 .hidden {
     display: none;
 }
