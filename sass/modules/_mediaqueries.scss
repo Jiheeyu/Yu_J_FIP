@@ -1,6 +1,20 @@
+
+
 @media screen and (max-width: 1130px) {
     .mNav {
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #contact-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact-info {
+        height: 150px;
+        padding-left: 130px;
     }
 }
 
