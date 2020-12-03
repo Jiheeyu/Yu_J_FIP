@@ -5,4 +5,11 @@
     background: -o-linear-gradient($position,$colorOne,$colorTwo,$colorThree);
     background: linear-gradient($position,$colorOne,$colorTwo,$colorThree);  
   }
- 
+
+@mixin boxShadow($property) {
+  box-shadow: $property;
+  -webkit-box-shadow:$property;
+  -moz-box-shadow:$property;
+  -o-box-shadow:$property;
+  -ms-box-shadow:$property;
+}

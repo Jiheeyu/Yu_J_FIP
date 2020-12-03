@@ -3,7 +3,7 @@
     letter-spacing: 5px;
     font-style: italic;
     font-size:28px;
-    margin: 80px 0 60px 0;
+    margin: 80px 0 80px 0;
 }
 
 #contact-section {
@@ -62,7 +62,7 @@ label {
 
 input[type=text], input[type=email], textarea {
     padding: 1.3em;
-    box-shadow: inset 1px 1px 3px rgba(56, 55, 55, 0.2);
+    @include boxShadow(inset 1px 1px 3px rgba(56, 55, 55, 0.2));
     margin: 10px 0;
     border-radius: 30px;
     width: 400px;
@@ -89,7 +89,7 @@ select {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9cf1f0",endColorstr="#fef281",GradientType=1);
     border: none;
     border-radius: 30px;
-    box-shadow: 1px 1px 4px rgba(56, 55, 55, 0.1);
+    @include boxShadow(1px 1px 4px rgba(56, 55, 55, 0.1));
     width: 400px;
     color: white;
     padding: 15px 30px;
