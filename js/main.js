@@ -4,10 +4,19 @@
 
     const menuIcon = document.querySelector('.hamburger-menu');
     const mNav = document.querySelector('.mNav');
+    const video = document.querySelector('.video-content');
+    const thumb = document.querySelector('.thumb');
+    const closeButton = document.querySelector('.close');
+    
 
     menuIcon.addEventListener('click' , () => {
         mNav.classList.toggle("change");
     });
+    
+
+    thumb.addEventListener('click', () => {
+        video.classList.toggle("active");
+    })
 
 
 

@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 <body>
-    <main>
+    <main id="app">
         <h1 class="hidden">Hello, This is Jihee's Portfolio Website!</h1>
     <!-- container wrapper -->
     <div class="container-wrapper">
@@ -74,8 +74,14 @@
         <!--Demo reel Content-->
         <section id="demo-content" class="box">
             <h2 class="hidden">demo reel content</h2>
-            <div class="video-content">
-                <video class="video" src="videos/demo-reel.mp4" type="video/mp4" controls></video>
+            <div>
+                <div class="video-img">
+                <img class="thumb" src="images/port-demo-thumb.jpg" alt="demo reel thumb">
+                </div>
+                <div class="video-content">
+                    <video class="demo-reel" src="videos/demo-reel.mp4" type="video/mp4" controls="true"></video>
+                    <img class="close" src="images/icon-close.svg" alt="close icon" width="25px" height="25px">
+                </div>
             </div>
         </section>
         <!--End Demo reel Content-->
