@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    <main>
+    <main id="app">
         <h1 class="hidden">Hello, This is Jihee's Portfolio Website!</h1>
     <!-- container wrapper -->
     <div id="home" class="container-wrapper">
@@ -25,9 +25,9 @@
             </div>
 
             <!-- Main nav -->
-            <nav class="mNav">
+            <nav class="mNav" :class="{'change':showNavBar}">
                 <h2 class="hidden">navigation</h2>
-                <div class="hamburger-menu">
+                <div @click="showNav" class="hamburger-menu">
                     <div class="line line-1"></div>
                     <div class="line line-2"></div>
                     <div class="line line-3"></div>
@@ -184,7 +184,7 @@
     </div>
     <!-- End container wrapper -->
     </main>
-    <script src="data/projectDataSet.js"></script>
-    <script src="js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src='js/main.js' type='module'></script>
 </body>
 </html>

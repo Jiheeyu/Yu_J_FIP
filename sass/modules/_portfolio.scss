@@ -85,7 +85,7 @@
     background-color: violet;
     height: 750px;
     // text-align: center;
-    background:url(../images/port-demo-bg.jpg) no-repeat center;
+    
     position: relative;
 
     .thumb {
@@ -99,6 +99,19 @@
         @include boxShadow(1px 1px 4px rgba(56, 55, 55, 0.1));
     }
 }
+
+.demo-bg {
+    background:url(../images/port-demo-bg.jpg) no-repeat center;
+}
+
+.promo-bg {
+    background:url(../images/port-promo-bg.jpg) no-repeat center;
+}
+
+.kid-bg {
+    background:url(../images/port-kid-bg.jpg) no-repeat center;
+}
+
 
 .video-content {
     position: fixed;
@@ -187,5 +200,10 @@
     img {
         opacity: 0.5;
         @include filter(grayscale, 1);
+    }
+
+    img:hover {
+        opacity: 1;
+        @include filter(grayscale, 0);
     }
 }

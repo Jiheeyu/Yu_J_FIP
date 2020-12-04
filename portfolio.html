@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 <body>
     <main id="app">
@@ -25,9 +24,9 @@
             </div>
 
             <!-- Main nav -->
-            <nav class="mNav">
+            <nav class="mNav" :class="{'change':showNavBar}">
                 <h2 class="hidden">navigation</h2>
-                <div class="hamburger-menu">
+                <div @click="showNav" class="hamburger-menu">
                     <div class="line line-1"></div>
                     <div class="line line-2"></div>
                     <div class="line line-3"></div>
@@ -74,20 +73,24 @@
         <!--Demo reel Content-->
         <section id="demo-content" class="box">
             <h2 class="hidden">demo reel content</h2>
-            <div>
-                <div class="video-img">
-                <img class="thumb" src="images/port-demo-thumb.jpg" alt="demo reel thumb">
-                </div>
-                <div class="video-content">
-                    <video class="demo-reel" src="videos/demo-reel.webm" type="video/mp4" controls="true"></video>
-                    <img class="close" src="images/icon-close.svg" alt="close icon" width="25px" height="25px">
-                </div>
+            <component :is="activeComponent">
+
+            </component>
+
+            <buttoncomponent @setvideo="setVideoComponent"></buttoncomponent>
+            <!-- <div class="video-img">
+            <img class="thumb" src="images/port-demo-thumb.jpg" alt="demo reel thumb">
             </div>
-            <div class="video-btns">
+            <div class="video-content">
+                <video class="demo-reel" src="videos/demo-reel.webm" type="video/mp4" controls="true"></video>
+                <img class="close" src="images/icon-close.svg" alt="close icon" width="25px" height="25px">
+            </div> -->
+        
+            <!-- <div class="video-btns">
                 <img src="images/btn-deem-reel.png" alt="demo reel button">
                 <img src="images/btn-promo.png" alt="promo video button">
                 <img src="images/btn-kids.png" alt="kids channel button">
-            </div>
+            </div> -->
         </section>
         <!--End Demo reel Content-->
 
@@ -161,6 +164,7 @@
     </div>
     <!-- End container wrapper -->
     </main>
-    <script src="js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src='js/main.js' type='module'></script>
 </body>
 </html>

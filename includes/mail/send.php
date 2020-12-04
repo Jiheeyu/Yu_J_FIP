@@ -1,11 +1,4 @@
 <?php
-// ini_Set('display_errors', 0);
-// TODO: Take care the form submission [ Work as post office ]
-
-// 4. It returns proper info in JSON format [Receipts!]
-//  a. What is AJAX?
-//  b. What is JSON?
-//  c. How to build JSON in PHP
 
 header('Access-Control-Allow-Origin*');
 header('Content-Type: application/json; charset=UTF=8');
@@ -27,7 +20,6 @@ if (empty($_POST['firstname']) || empty($_POST['lastname']) || empty($_POST['ema
     return;
 }
 
-
 if (isset($_POST['firstname'])) {
     $visitor_name = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
 }
@@ -43,7 +35,6 @@ if (isset($_POST['email'])) {
         $visitor_country = $_POST['country'];
     }
 }
-
 
 if (!$visitor_email) {
     $results['email'] = 'Email is not valid';
