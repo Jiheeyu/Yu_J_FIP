@@ -1,8 +1,9 @@
-import demoComponent from "./components/demereelComponent.js";
+import demoComponent from "./components/demoComponent.js";
 import promoComponent from "./components/promoComponent.js";
 import kidComponent from "./components/kidsChannelComponent.js";
 import ButtonComponent from "./components/buttonComponent.js";
-
+import graphicCard from "./components/graphicPortfolio.js";
+import lightBox from "./components/lightBox.js";
 import { fetchData } from "./components/DataMiner.js";
 
 (() => {
@@ -12,9 +13,11 @@ import { fetchData } from "./components/DataMiner.js";
             activeComponent: demoComponent,
 
             showNavBar: false,
+
+            currentItem: {},
+            videoList: "",
+            collection: []
             
-            collection: [],
-            currentItem: {}
             
         },
 
@@ -25,10 +28,6 @@ import { fetchData } from "./components/DataMiner.js";
                 console.log('data', data);
                 this.collection = data;
             }).catch(err => console.log(err));
-            // may be you can try .then(data => {
-            // data.forEach(prof => this.profs.push(prof))
-            //})
-            
         },
 
         updated: function() {
@@ -36,13 +35,18 @@ import { fetchData } from "./components/DataMiner.js";
         },
 
         methods: {
+
             showNav() {
                 this.showNavBar = !this.showNavBar;
             },
 
             setVideoComponent(component) {
-                debugger;
-                this.activeComponent = `${component}Component`;
+                //debugger;        
+                this.activeComponent = `${component.video_list}Component`;
+                this.videoList = component.video_list;
+                this.currentItem = component;
+
+                documnet.querySelector('.lightbox').classlist.add('show-lightbox');
             }
         },
 
@@ -50,51 +54,9 @@ import { fetchData } from "./components/DataMiner.js";
             demoComponent,
             promoComponent,
             kidComponent,
-            "buttoncomponent": ButtonComponent
+            "buttoncomponent": ButtonComponent,
+            "graphic-card": graphicCard
+            // "lightbox": lightBox
         }
     }).$mount("#app");
 })();
-
-// (() => {
-
-//     const menuIcon = document.querySelector('.hamburger-menu');
-//     const mNav = document.querySelector('.mNav');
-//     const video = document.querySelector('.video-content');
-//     const thumb = document.querySelector('.thumb');
-//     const closeButton = document.querySelector('.close');
-    
-
-//     menuIcon.addEventListener('click' , () => {
-//         mNav.classList.toggle("change");
-//     });
-    
-
-//     thumb.addEventListener('click', () => {
-//         video.classList.toggle("active");
-//     })
-
-
-
-//     fetch('./data/projectDataSet.json')
-//     .then(res => res.json()) 
-//     .then(data => {
-        
-//         console.log(data);
-
-//         for (let proj in data) {
-//             const project = document.querySelector('.proj').children;
-//             project[1].textContent = data[proj].name;
-//             project[2].textContent = data[proj].img;
-//             project[3].textContent = data[proj].descrip;
-//         };
-//         // debugger;
-
-
-//     })
-
-//     .catch((err) => {
-//         //debugger;
-//         console.log(err);
-//     })
-
-// })()

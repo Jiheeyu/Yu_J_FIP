@@ -73,13 +73,19 @@
         <!--Demo reel Content-->
         <section id="demo-content" class="box">
             <h2 class="hidden">demo reel content</h2>
-            <component :is="activeComponent">
+            <component :is="activeComponent" :item="currentItem" :videolist="videoList"></component>
+            <lightbox  :item="currentItem" :videolist="videoList"></lightbox>
+            <div class="video-btns-container">
+                <buttoncomponent v-for="item in collection" :item="item" :key="item.id" @setvideo="setVideoComponent"></buttoncomponent>
+            </div>
+            
+                
+            </lightbox>
 
-            </component>
-
-            <lightbox :item="currentItem"></lightbox>
-
-            <buttoncomponent v-for="item in collection" :item="item" :key="item.id" @setvideo="setVideoComponent"></buttoncomponent>
+            <!-- <div class="lightbox">
+                <video class="demo-reel" src="videos/demo-reel.webm" type="video/mp4" controls="true"></video>
+                <img class="close" src="images/icon-close.svg" alt="close icon" width="25px" height="25px">
+            </div> -->
             <!-- <div class="video-img">
             <img class="thumb" src="images/port-demo-thumb.jpg" alt="demo reel thumb">
             </div>
@@ -100,7 +106,9 @@
         <section id="project-content" class="box">
             <h2 class="hidden">project content</h2>
             <ul class="proj-box">
-                <li class="proj-item">
+
+                <graphic-card v-for="graphic in collection" :graphic="graphic" :key="graphic.id"></graphic-card>
+                <!-- <li class="proj-item">
                     <div class="proj-text">
                         <h3>01&nbsp;</h3>
                         <h3 class="proj-name">project name</h2>
@@ -141,7 +149,7 @@
                     <div class="proj-img">
                     </div>
                     
-                </li>
+                </li>  -->
             </ul>
         </section>
         <!--End Project Content-->
