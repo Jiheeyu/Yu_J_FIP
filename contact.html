@@ -52,10 +52,13 @@
         <!--contact-section starts-->
         <section class="box">
             <h2 class="contact-title">CONTACT ME</h2>
+            
             <div id="contact-section">
                 <form action="./includes/mail/send.php" method="POST" id="mail-form">
                     <!-- <label for="fullname">First Name</label> -->
-                    <input type="text" id="fullname" name="firstname" placeholder="First name" required>
+                    <span id="error"></span>
+
+                    <input type="text" id="name" name="name" placeholder="Full name" required>
         
                     <!-- <label for="email">Email</label> -->
                     <input type="email" id="email" name="email" placeholder="Email address" required>
@@ -99,5 +102,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script defer src='js/main.js' type='module'></script>
+    <script src='js/mail.js' type='module'></script>
+    
 </body>
 </html>

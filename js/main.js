@@ -3,15 +3,36 @@ import promoComponent from "./components/promoComponent.js";
 import kidComponent from "./components/kidsChannelComponent.js";
 import ButtonComponent from "./components/buttonComponent.js";
 
+import { fetchData } from "./components/DataMiner.js";
+
 (() => {
     const myVM = new Vue({
         
         data: {
             activeComponent: demoComponent,
-            
+
             showNavBar: false,
-        
             
+            collection: [],
+            currentItem: {}
+            
+        },
+
+        mounted: function() {
+            console.log("Vue is mounted, trying to fetch call");
+
+            fetchData("./includes/index.php").then(data => {
+                console.log('data', data);
+                this.collection = data;
+            }).catch(err => console.log(err));
+            // may be you can try .then(data => {
+            // data.forEach(prof => this.profs.push(prof))
+            //})
+            
+        },
+
+        updated: function() {
+            console.log('Vue just updated the DOM');
         },
 
         methods: {

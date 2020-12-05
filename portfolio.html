@@ -77,7 +77,9 @@
 
             </component>
 
-            <buttoncomponent @setvideo="setVideoComponent"></buttoncomponent>
+            <lightbox :item="currentItem"></lightbox>
+
+            <buttoncomponent v-for="item in collection" :item="item" :key="item.id" @setvideo="setVideoComponent"></buttoncomponent>
             <!-- <div class="video-img">
             <img class="thumb" src="images/port-demo-thumb.jpg" alt="demo reel thumb">
             </div>
@@ -103,7 +105,6 @@
                         <h3>01&nbsp;</h3>
                         <h3 class="proj-name">project name</h2>
                         <p class="proj-descrip"></p>
-                        <button class="proj-button">more</button>
                     </div>
                     <div class="proj-img">
                         <img src="images/port-bottle.jpg" alt="">
@@ -115,7 +116,6 @@
                         <h3>&nbsp;02</h3>
                         <h3 class="proj-name">project name</h3>
                         <p class="proj-descrip"></p>
-                        <button class="proj-button">more</button>
                     </div>
                     <div class="proj-img">
                         <img src="images/port-bee.jpg" alt="">
@@ -126,7 +126,6 @@
                         <h3>03&nbsp;</h3>
                         <h3 class="proj-name">project name</h3>
                         <p class="proj-descrip"></p>
-                        <button class="proj-button">more</button>
                     </div>
                     <div class="proj-img">
                         <img src="images/port-piz.jpg" alt="">
@@ -138,7 +137,6 @@
                         <h3>&nbsp;04</h3>
                         <h3 class="proj-name">project name</h3>
                         <p class="proj-descrip"></p>
-                        <button class="proj-button">more</button>
                     </div>
                     <div class="proj-img">
                     </div>
