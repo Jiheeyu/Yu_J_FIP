@@ -73,14 +73,10 @@
         <!--Demo reel Content-->
         <section id="demo-content" class="box">
             <h2 class="hidden">demo reel content</h2>
-            <component :is="activeComponent" :item="currentItem" :videolist="videoList"></component>
-            <lightbox  :item="currentItem" :videolist="videoList"></lightbox>
+            <component :is="activeComponent" :item="currentItem" :videolist="videoList" ></component>
             <div class="video-btns-container">
                 <buttoncomponent v-for="item in collection" :item="item" :key="item.id" @setvideo="setVideoComponent"></buttoncomponent>
             </div>
-            
-                
-            </lightbox>
 
             <!-- <div class="lightbox">
                 <video class="demo-reel" src="videos/demo-reel.webm" type="video/mp4" controls="true"></video>

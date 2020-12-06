@@ -5,9 +5,24 @@
     }
 }
 
+
+@media screen and (max-width: 1600px) {
+   
+    .mainIllust {
+        width: 550px;
+        height: 550px;
+        right: 0;
+    }   
+}
+
 @media screen and (max-width: 1130px) {
     .mNav {
         width: 50%;
+    }
+}
+@media screen and (max-width:1095px) {
+    .button-section {
+        margin-bottom: 50px;
     }
 }
 
@@ -15,16 +30,85 @@
     #contact-section {
         display: flex;
         flex-direction: column-reverse;
+        margin-bottom: 100px;
     }
 
     .contact-info {
         height: 150px;
         padding-left: 130px;
     }
+
+    .mainIllust {
+        right: 0;
+        width: 450px;
+        height: 450px;
+        top:450px
+    }
+
+    .my-info {
+        width: inherit;
+    }
+
+    .proj-item {
+        position: inherit;
+    }
+
+    .proj-item .proj-text  {
+        position: inherit;
+        width: 400px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .port-sub-line  {
+        width: 100px;
+    }
+    .port-mainText {
+        width: inherit;
+    }
+
     .mNav {
         width: 100%;
+    }
+
+    .subLine {
+        width: 100px;
+    }
+
+    .mainText h3 {
+        width: 400px;
+    }
+
+    .mainText .drawing {
+        margin-left: 0;
+    }
+
+    .mainIllust {
+        width: 350px;
+        height: 350px;
+        top:450px
+       
+    }
+
+    .jar {
+        position: inherit;
+    }
+    
+    .sportsnet {
+        position: inherit;
+    }
+
+    .portfolio-imgs {
+        position: inherit;
+        height: inherit;
+        margin-bottom: 50px;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer h3 {
+        margin: 0 10px;
+        width: 100px;
     }
 }
