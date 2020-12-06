@@ -1,3 +1,4 @@
+
 export default {
     name: "demoComponent",
     
@@ -6,10 +7,9 @@ export default {
     template: `
         <div>
             <div class="video-img demo-bg">
-                <video class="thumb" src="videos/demo-reel.webm" type="video/mp4" controls="true"></video>
+                <iframe class="thumb" width="560" height="315" src="https://www.youtube.com/embed/lDs_lcKNV5I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     `,
 
 }
-

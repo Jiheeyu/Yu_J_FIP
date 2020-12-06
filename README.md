@@ -1,4 +1,4 @@
-![YUJIHEE]()
+![YUJIHEE](images/banner.png "jihee's website")
 
 # :sparkles:Jihee Yu's Final Project:sparkles:
 > Third Semester
