@@ -6,7 +6,7 @@ export default {
     template: `
         <div>
             <div class="video-img kid-bg">
-            <img class="thumb" :src="'images/' + item.thumb" alt="kids channel thumbnail">
+                <video class="thumb" :src="'videos/' + item.source" type="video/mp4" controls="true"></video>
             </div>
         </div>
     `

@@ -3,6 +3,8 @@ import promoComponent from "./components/promoComponent.js";
 import kidComponent from "./components/kidsChannelComponent.js";
 import ButtonComponent from "./components/buttonComponent.js";
 import graphicCard from "./components/graphicPortfolio.js";
+import lightBox from "./components/lightBox.js";
+
 import { fetchData } from "./components/DataMiner.js";
 
 (() => {
@@ -15,6 +17,7 @@ import { fetchData } from "./components/DataMiner.js";
 
             currentItem: {},
             videoList: "",
+            graphicList: "",
             collection: []
             
             
@@ -45,7 +48,16 @@ import { fetchData } from "./components/DataMiner.js";
                 this.activeComponent = `${component.video_list}Component`;
                 this.videoList = component.video_list;
                 this.currentItem = component;
+            },
+
+            setGraphicComponent(project) {
+       
+                this.graphicList = project.graphic_list;
+                this.currentItem = project;
+
+                document.querySelector('.lightbox').classList.add('show-lightbox');
             }
+
         },
 
         components: {
@@ -53,7 +65,8 @@ import { fetchData } from "./components/DataMiner.js";
             promoComponent,
             kidComponent,
             "buttoncomponent": ButtonComponent,
-            "graphic-card": graphicCard
+            "graphic-card": graphicCard,
+            "lightbox": lightBox
         }
     }).$mount("#app");
 })();

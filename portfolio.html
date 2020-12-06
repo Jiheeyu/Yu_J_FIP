@@ -75,6 +75,7 @@
             <h2 class="hidden">demo reel content</h2>
             <component :is="activeComponent" :item="currentItem" :videolist="videoList" ></component>
             <div class="video-btns-container">
+                <h3>CLICK THE BUTTONS !</h3>
                 <buttoncomponent v-for="item in collection" :item="item" :key="item.id" @setvideo="setVideoComponent"></buttoncomponent>
             </div>
 
@@ -103,7 +104,8 @@
             <h2 class="hidden">project content</h2>
             <ul class="proj-box">
 
-                <graphic-card v-for="graphic in collection" :graphic="graphic" :key="graphic.id"></graphic-card>
+                <graphic-card v-for="graphic in collection" :graphic="graphic" :key="graphic.id" @setgraphic="setGraphicComponent"></graphic-card>
+                <lightbox :item="currentItem" :graphiclist="graphicList"></lightbox>
                 <!-- <li class="proj-item">
                     <div class="proj-text">
                         <h3>01&nbsp;</h3>

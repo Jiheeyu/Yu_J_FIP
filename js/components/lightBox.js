@@ -1,25 +1,27 @@
-import Demo from "./demoComponent.js";
+import graphicWork from "./graphicComponent.js"
 
 export default {
 
-    props: ["item", "videolist"],
-   
-    template: `
+    props: ["item", "graphiclist"],
 
-        <div class="lightbox">
-            <video class="video-lb" :src="'videos/' + item.source" type="video/mp4" controls="true"></video>
-            <img @click="closelb" class="close" src="images/icon-close.svg" alt="close icon" width="25px" height="25px">
-        </div>
-    `,
+    // data needs to be a function inside a component
+
+    template: 
+        `<section class="lightbox">
+            <span class="close" @click="closelb"><img src="images/icon-close.svg"></span>
+
+            <component :is="currentComponent" :work="item"></component>
+        </section>
+        `,
 
     computed: {
-        currentItem: function() {
-            return this.videolist;
+        currentComponent: function() {
+            return this.graphiclist;
         }
     },
 
     components: {
-      Demo
+        graphicWork
     },
 
     methods: {
@@ -27,6 +29,5 @@ export default {
             document.querySelector('.lightbox').classList.remove('show-lightbox');
         }
     }
-
 
 }
