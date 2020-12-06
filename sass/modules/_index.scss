@@ -77,59 +77,6 @@
     background: url(../images/flower.svg) no-repeat center;
 }
 
-#flower {
-    width: 400px;
-    height: 600px;
-}
-
-.Animate-Draw {
-    fill-opacity: 0;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration: 1;
-    
-    animation-name: DrawLine, FadeStroke, FillIn;
-    animation-duration: 4s, 1s, 1s;
-    animation-delay: 0s, 3.5s, 3.5s;
-  }
-
-  @keyframes DrawLine {
-    to { stroke-dashOffset: 0; }
-  }
-  
-  @keyframes FadeStroke {
-    to { stroke-opacity: 0; }
-  }
-  
-  @keyframes FillIn {
-    from { fill-opacity: 0; }
-    to { fill-opacity: 1; }
-  }
-
-// @keyframes flower {
-//     from {
-//         stroke-dashoffset: 1000;
-//         }
-//         to {
-//         stroke-dashoffset: 0;
-//         }
-// }
-#flower-path1 {
-    stroke-dashArray: 500;
-    stroke-dashoffset: 500;
-}
-
-#flower-path2 {
-    stroke-dashArray: 300;
-    stroke-dashoffset: 300; 
-}
-
-#flower-path3 {
-    stroke-dashArray: 500;
-    stroke-dashoffset: 500; 
-}
-
-
 h2 {
     font-family: $sub-font;
     font-weight: 300;
@@ -282,11 +229,10 @@ h2 {
     cursor: pointer;
 }
 
+
 .skill-text-container {
     display: flex;
 
 }
-
-
 
 
