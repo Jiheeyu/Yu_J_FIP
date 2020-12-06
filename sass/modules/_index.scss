@@ -227,8 +227,18 @@ h2 {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    @include transition(transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease);
 }
 
+.button:hover {
+    transform: translate3d(0px,-1px,0px);
+    -ms-transform: translate3d(0px,-1px,0px);
+    -webkit-transform: translate3d(0px,-1px,0px);
+    -moz-transform: translate3d(0px,-1px,0px);
+    -o-transform: translate3d(0px,-1px,0px);
+    @include linearGradient(90deg, rgba(156,241,240,1) 0%, rgba(153,240,187,1) 50%, rgba(254,242,129,1) 100%);
+    @include boxShadow(0 3px 6px rgba(0,0,0,.08));
+}
 
 .skill-text-container {
     display: flex;

@@ -28,7 +28,7 @@
 
     tl.from('.portfolio-title',{y:50, opacity:0, duration:0.7 })
       .from('.portfolio-imgs', {x:-100, opacity:0, duration:0.7})
-      .from('.graphic',{y:100, opacity:0, duration:0.7});
+      .from('.graphic',{y:100, opacity:0, duration:0.5});
       
       
     
@@ -38,8 +38,8 @@
         }
     });
 
-    mainC.from('.Text',{y:300, opacity:0, duration:0.7})
-         .from('.mainIllust',{opacity:0, duration:0.7});
+    mainC.from('.Text',{y:300, opacity:0, duration:1})
+         .from('.mainIllust',{opacity:0, duration:1});
 
     let aboutC = gsap.timeline({
         scrollTrigger: {
@@ -48,8 +48,8 @@
     });
 
     aboutC.from('.aboutMe-title',{y:50, opacity:0, duration:0.7})
-          .from('.designer',{x:-100, opacity:0, duration:0.7})
-          .from('.my-selfie',{y:50, opacity:0, duration:0.5})
+          .from('.designer',{x:-100, opacity:0, duration:0.5})
+          .from('.my-selfie',{y:50, opacity:0, duration:1})
           .from('.my-info',{x:100, opacity:0, duration:0.7});
 
 })();

@@ -48,6 +48,7 @@
     width: 400px;
     // background-color: lightgreen;
     align-self: center;
+    margin: 5px;
 }
 
 label { 
@@ -104,6 +105,16 @@ select {
     &:hover { background-color: #5588c8}
 
     span { padding-right: 0.5em; }
+}
+
+.submit-wrapper:hover {
+    transform: translate3d(0px,-1px,0px);
+    -ms-transform: translate3d(0px,-1px,0px);
+    -webkit-transform: translate3d(0px,-1px,0px);
+    -moz-transform: translate3d(0px,-1px,0px);
+    -o-transform: translate3d(0px,-1px,0px);
+    @include linearGradient(90deg, rgba(156,241,240,1) 0%, rgba(153,240,187,1) 50%, rgba(254,242,129,1) 100%);
+    @include boxShadow(0 3px 6px rgba(0,0,0,.08));
 }
 
 #error {
