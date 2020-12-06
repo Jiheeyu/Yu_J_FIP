@@ -39,6 +39,8 @@
         }
         .add-icon {
             margin: 0;
+            width: 10px;
+            height: 10px;
         }
     }
 
@@ -121,4 +123,14 @@ select {
     color: rgb(255, 112, 77);
     margin-left:20px;
     display: inline-block;
+}
+
+.phoneic {
+    width: 30px;
+    height: 30px;
+}
+
+.emailic {
+    width: 28px;
+    height: 28px;
 }

@@ -11,6 +11,13 @@ header {
     
 }
 
+.logo {
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 .nav-list {
     display: flex;
     flex-direction: column;
