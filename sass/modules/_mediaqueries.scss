@@ -19,6 +19,19 @@
     .mNav {
         width: 50%;
     }
+
+    .portIllust {
+        right: inherit;
+        top:200px;
+    }
+
+    .port-sub-line {
+        width: 100px;
+    }
+
+    .port-mainText {
+        width: inherit;
+    }
 }
 @media screen and (max-width:1095px) {
     .button-section {
@@ -57,9 +70,20 @@
         position: inherit;
         width: 400px;
     }
+
+    .proj-name {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .video-img .thumb {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
+
     .port-sub-line  {
         width: 100px;
     }
@@ -104,11 +128,125 @@
         margin-bottom: 50px;
 
     }
+    .video-img {
+        height: 550px;
+    }
+
+    .graphic-descip {
+        width: inherit;
+    }
+    
 }
 
 @media screen and (max-width: 400px) {
     footer h3 {
         margin: 0 10px;
         width: 100px;
+    }
+
+    .mainText {
+
+        h3 {
+            font-size: 70px;
+        }
+        padding-left: 10px;
+    }
+
+    .mainText .drawing {
+        -webkit-text-stroke-width: 1px;
+        font-size: 50px;
+    }
+
+    .button-section h3 {
+        padding: 0 10px;
+    }
+
+    .button-section .adj {
+        -webkit-text-stroke-width: 1px;
+    }
+    .my-info {
+        margin-left: 10px;
+    }
+
+    .proj-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // background-color: antiquewhite;
+        width: 85%;
+        margin: 50px auto;
+    }
+    
+    .proj-item {
+        width: inherit;
+        // background-color: #9acd32;
+        font-family: "Libre Baskerville",serif;
+        font-size: 30px;
+        align-self: flex-start;
+        // position: relative;
+        flex-basis: 400px;
+    
+        .proj-text {
+            position: inherit;
+            top: 150px;
+            z-index: 1;
+        }
+    }
+    
+    .proj-item:nth-of-type(odd){
+        align-self: inherit;
+       
+    
+        .proj-text {
+            left: inherit;
+            text-align: inherit;
+        }
+    }
+    
+    .proj-item:nth-of-type(even) {
+        .proj-text {
+            right: inherit;
+        }
+    }
+
+    .graphic-descip {
+        width: inherit;
+    }
+
+    .port-mainText h3 {
+        font-size: 70px;
+    }
+    
+    .port-mainText .port-jihees {
+        font-size: 50px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .video-img {
+        height: 400px;
+    }
+
+    .portIllust {
+        width: 350px;
+        height: 350px;
+    }
+
+    .contact-info {
+        padding-left: 80px;
+    }
+
+    .submit-wrapper {
+     width: 300px;
+    }
+
+    input[type=text], input[type=email], textarea {
+        width: 300px;
+    }
+
+    #mail-form {
+        width: inherit;
+        align-self: inherit;
+        display: grid;
+        margin: auto;
     }
 }

@@ -2,6 +2,7 @@ import demoComponent from "./components/demoComponent.js";
 import promoComponent from "./components/promoComponent.js";
 import kidComponent from "./components/kidsChannelComponent.js";
 import ButtonComponent from "./components/buttonComponent.js";
+import updateComponent from "./components/updatingComponent.js";
 import graphicCard from "./components/graphicPortfolio.js";
 import lightBox from "./components/lightBox.js";
 
@@ -64,6 +65,7 @@ import { fetchData } from "./components/DataMiner.js";
             demoComponent,
             promoComponent,
             kidComponent,
+            updateComponent,
             "buttoncomponent": ButtonComponent,
             "graphic-card": graphicCard,
             "lightbox": lightBox

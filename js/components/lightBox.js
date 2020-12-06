@@ -1,4 +1,5 @@
 import graphicWork from "./graphicComponent.js"
+import videoWork from "./videoComponent.js"
 
 export default {
 
@@ -21,7 +22,8 @@ export default {
     },
 
     components: {
-        graphicWork
+        graphicWork,
+        videoWork
     },
 
     methods: {

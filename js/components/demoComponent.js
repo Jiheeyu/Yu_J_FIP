@@ -6,7 +6,7 @@ export default {
     template: `
         <div>
             <div class="video-img demo-bg">
-                <video class="thumb" :src="'videos/' + item.source" type="video/mp4" controls="true"></video>
+                <video class="thumb" src="videos/demo-reel.webm" type="video/mp4" controls="true"></video>
             </div>
         </div>
     `,

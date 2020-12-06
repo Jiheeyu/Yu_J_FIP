@@ -79,23 +79,6 @@
                 <buttoncomponent v-for="item in collection" :item="item" :key="item.id" @setvideo="setVideoComponent"></buttoncomponent>
             </div>
 
-            <!-- <div class="lightbox">
-                <video class="demo-reel" src="videos/demo-reel.webm" type="video/mp4" controls="true"></video>
-                <img class="close" src="images/icon-close.svg" alt="close icon" width="25px" height="25px">
-            </div> -->
-            <!-- <div class="video-img">
-            <img class="thumb" src="images/port-demo-thumb.jpg" alt="demo reel thumb">
-            </div>
-            <div class="video-content">
-                <video class="demo-reel" src="videos/demo-reel.webm" type="video/mp4" controls="true"></video>
-                <img class="close" src="images/icon-close.svg" alt="close icon" width="25px" height="25px">
-            </div> -->
-        
-            <!-- <div class="video-btns">
-                <img src="images/btn-deem-reel.png" alt="demo reel button">
-                <img src="images/btn-promo.png" alt="promo video button">
-                <img src="images/btn-kids.png" alt="kids channel button">
-            </div> -->
         </section>
         <!--End Demo reel Content-->
 
@@ -103,51 +86,8 @@
         <section id="project-content" class="box">
             <h2 class="hidden">project content</h2>
             <ul class="proj-box">
-
                 <graphic-card v-for="graphic in collection" :graphic="graphic" :key="graphic.id" @setgraphic="setGraphicComponent"></graphic-card>
                 <lightbox :item="currentItem" :graphiclist="graphicList"></lightbox>
-                <!-- <li class="proj-item">
-                    <div class="proj-text">
-                        <h3>01&nbsp;</h3>
-                        <h3 class="proj-name">project name</h2>
-                        <p class="proj-descrip"></p>
-                    </div>
-                    <div class="proj-img">
-                        <img src="images/port-bottle.jpg" alt="">
-                    </div>
-                    
-                </li>
-                <li class="proj-item">
-                    <div class="proj-text">
-                        <h3>&nbsp;02</h3>
-                        <h3 class="proj-name">project name</h3>
-                        <p class="proj-descrip"></p>
-                    </div>
-                    <div class="proj-img">
-                        <img src="images/port-bee.jpg" alt="">
-                    </div>
-                </li>
-                <li class="proj-item">
-                    <div class="proj-text">
-                        <h3>03&nbsp;</h3>
-                        <h3 class="proj-name">project name</h3>
-                        <p class="proj-descrip"></p>
-                    </div>
-                    <div class="proj-img">
-                        <img src="images/port-piz.jpg" alt="">
-                    </div>
-            
-                </li>
-                <li class="proj-item">
-                    <div class="proj-text">
-                        <h3>&nbsp;04</h3>
-                        <h3 class="proj-name">project name</h3>
-                        <p class="proj-descrip"></p>
-                    </div>
-                    <div class="proj-img">
-                    </div>
-                    
-                </li>  -->
             </ul>
         </section>
         <!--End Project Content-->

@@ -8,7 +8,9 @@ export default {
             <section class="graphic-template">
                 <h2>{{work.title}}</h2>
                 <img :src="'images/' + work.source ">
-                <h2>{{work.description}}<h2>
+                <div class="graphic-descip">
+                    <h2>{{work.description}}<h2>
+                </div>
             </section>
         `,
 }
